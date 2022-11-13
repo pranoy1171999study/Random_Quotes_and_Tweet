@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@1,900&family=Raleway:ital,wght@1,100&display=swap');
         body{
@@ -103,7 +104,7 @@
 </head>
 <body>
     <div id="box">
-        <div id="card">
+        <div id="card" data-aos="zoom-in">
             <div id="quotes"></div>
             <div id="author"></div>
             <i class="start-quote fas fa-quote-left fa-2x" id="oquote"></i>
@@ -112,9 +113,11 @@
                 <img src="./logo.png" alt="twitter">
             </button>
         </div>
+        
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
         const quotes=document.getElementById("quotes");
         const author=document.getElementById("author");
         const newQ=document.getElementById("newQ");
@@ -161,5 +164,6 @@
         });
     </script>
     <script src="https://kit.fontawesome.com/4f70aa5b71.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
